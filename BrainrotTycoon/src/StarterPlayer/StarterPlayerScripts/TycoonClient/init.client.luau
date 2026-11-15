@@ -1,0 +1,10 @@
+-- BRAINROT TYCOON - cliente (liga o HUD e os efeitos do mundo)
+local Hud = require(script:WaitForChild("Hud"))
+local WorldFx = require(script:WaitForChild("WorldFx"))
+local Shop = require(script:WaitForChild("Shop"))
+local Combat = require(script:WaitForChild("Combat"))
+
+Hud.Init()
+WorldFx.Init(Hud)
+Shop.Init(Hud)
+Combat.Init(Hud, WorldFx)
